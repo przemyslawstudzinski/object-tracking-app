@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ObjectRecognition.iml" filepath="$PROJECT_DIR$/ObjectRecognition.iml" />
+      <module fileurl="file://C:\Users\Przemo\Documents\GitHub\object-tracking-app\ObjectRecognition.iml" filepath="C:\Users\Przemo\Documents\GitHub\object-tracking-app\ObjectRecognition.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/object-tracking-app.iml" filepath="$PROJECT_DIR$/object-tracking-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/openCVLibrary331/openCVLibrary331.iml" filepath="$PROJECT_DIR$/openCVLibrary331/openCVLibrary331.iml" />
     </modules>
   </component>

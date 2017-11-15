@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\Przemo\Documents\GitHub\object-recognition-app\ObjectRecognition\openCVLibrary331\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\Przemo\Documents\GitHub\object-recognition-app\ObjectRecognition\openCVLibrary331\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Przemo\Documents\GitHub\object-tracking-app\openCVLibrary331\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\Przemo\Documents\GitHub\object-tracking-app\openCVLibrary331\src\debug\shaders"/></dataSet></merger>
