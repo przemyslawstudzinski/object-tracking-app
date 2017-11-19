@@ -179,9 +179,10 @@ public class JavaCameraView extends CameraBridgeViewBase implements PreviewCallb
                     mFrameWidth = params.getPreviewSize().width;
                     mFrameHeight = params.getPreviewSize().height;
 
-                    if ((getLayoutParams().width == LayoutParams.MATCH_PARENT) && (getLayoutParams().height == LayoutParams.MATCH_PARENT))
-                        mScale = Math.min(((float)height)/mFrameHeight, ((float)width)/mFrameWidth);
-                    else
+                    if ((getLayoutParams().width == LayoutParams.MATCH_PARENT) && (getLayoutParams().height == LayoutParams.MATCH_PARENT)) {
+                        mScale = Math.min(((float) height) / mFrameHeight, ((float) width) / mFrameWidth);
+                        mScale = 3.0f;
+                    } else
                         mScale = 0;
 
                     if (mFpsMeter != null) {

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gps_camera_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:orientation="horizontal"
+    tools:context="app.objectrecognition.GPSSensorActivity">
+
+    <TextView
+        android:id="@+id/resultTextView1"
+        android:layout_width="353dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="142dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="34dp"
+        android:text="Move your phone to get distance to cities around you!"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/objectTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editTextDirection"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="121dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/objectTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/objectTextView"
+        app:layout_constraintTop_toTopOf="@+id/objectTextView" />
+
+    <TextView
+        android:id="@+id/objectTextView"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="98dp"
+        android:text="Direction: "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDirection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultTextView1" />
+
+</android.support.constraint.ConstraintLayout>

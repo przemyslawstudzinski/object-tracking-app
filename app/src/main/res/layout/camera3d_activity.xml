@@ -9,6 +9,6 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:visibility="gone"
-        android:id="@+id/open_cv_activity"/>
+        android:id="@+id/open_cv_3d_activity"/>
 
 </LinearLayout>
