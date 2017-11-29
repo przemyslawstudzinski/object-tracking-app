@@ -62,6 +62,7 @@ public class Camera3DActivity extends Activity implements CameraBridgeViewBase.C
         }
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.open_cv_3d_activity);
         mOpenCvCameraView.setMaxFrameSize(640, 480);
@@ -123,6 +124,12 @@ public class Camera3DActivity extends Activity implements CameraBridgeViewBase.C
 
         Core.hconcat(matList, output);
 
+        cleanUp(part1, part2, preview1, preview2);
+
+        return output;
+    }
+
+    private void cleanUp(Mat part1, Mat part2, Mat preview1, Mat preview2) {
         if (part1 != null) {
             part1.release();
         }
@@ -136,7 +143,5 @@ public class Camera3DActivity extends Activity implements CameraBridgeViewBase.C
             preview2.release();
         }
         System.gc();
-
-        return output;
     }
 }

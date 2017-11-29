@@ -41,7 +41,6 @@ public class MainActivity extends Activity implements CameraBridgeViewBase.CvCam
     private static final Scalar GREEN = new Scalar(0, 255, 0);
 
     private enum Option {SELECT, TRACK, STOP_TRACK, DETECT}
-
     private static Option mode = Option.SELECT;
     private MenuItem select;
     private MenuItem track;
@@ -50,7 +49,6 @@ public class MainActivity extends Activity implements CameraBridgeViewBase.CvCam
     private MenuItem gps;
     private MenuItem simpleCamera;
     private MenuItem detect;
-
 
     private CameraBridgeViewBase mOpenCvCameraView;
     private Intent camera3D;
@@ -154,10 +152,10 @@ public class MainActivity extends Activity implements CameraBridgeViewBase.CvCam
         select = menu.add("Select Target");
         track = menu.add("Start Track");
         stopTrack = menu.add("Stop Track");
+        detect = menu.add("Detect");
+        simpleCamera = menu.add("Camera");
         view3d = menu.add("3D View");
         gps = menu.add("GPS & Sensor");
-        simpleCamera = menu.add("Camera");
-        detect = menu.add("Detect");
         return true;
     }
 
