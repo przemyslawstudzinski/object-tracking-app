@@ -1,4 +1,4 @@
-# object-recognition-app
+# object-tracking-app
 
 ### Android app to track, detect object and simple processing.
 
